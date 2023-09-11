@@ -16,6 +16,11 @@
 h6{
     width: 200px;
 }
+.favorite .heart{
+    position:relative;
+    top: 10%;
+    left: 90%;
+}
 
 .card--image {
     width: 250px;
