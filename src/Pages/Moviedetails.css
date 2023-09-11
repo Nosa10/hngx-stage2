@@ -1,0 +1,46 @@
+.background{
+    margin-bottom: 20px;
+}
+.background img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+}
+.btn{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    margin-left: 50%;
+    margin-top: -50%;
+}
+a:hover {
+    font-weight: bold;
+    font-size: 30px;
+}
+.someDetails{
+    margin: 20px;
+}
+.someDetails h4{
+    color: rgb(119, 13, 13);
+    font-weight: bolder;
+    font-size: 30px;
+}
+.someDetails p{
+    font-style: italic;
+    color: grey;
+    font-weight: 700;
+}
+.overview{
+    margin: 20px;
+    font-weight: 500;
+}
+.red{
+    color: red;
+}
+h4{
+    margin: 20px;
+}

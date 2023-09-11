@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin: 20px;
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-x: auto;
+}

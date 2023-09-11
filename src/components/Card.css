@@ -1,0 +1,48 @@
+
+/* *{
+    display: flex;
+} */
+
+.card {
+    margin: 20px;
+    width: 250px;
+    height: 550px;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: space-between;
+    overflow: hidden;
+}
+h6{
+    width: 200px;
+}
+
+.card--image {
+    width: 250px;
+    height: 370px;
+    /* border-radius: 9px;
+    margin-bottom: 9px; */
+}
+.movie-title{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.rating{
+    display: grid;
+    justify-content: space-between;
+}
+.genre{
+    color: #9CA3AF;
+    ;
+}
+
+/* ADD */
+/* .card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
