@@ -30,7 +30,7 @@ function Card({poster_path,title, release_date, id, vote_average}) {
   }, [isFavorite])
   return (
     <div className='card' data-testid="movie-card" key={id} >
-    <Link to={`/movies/${id}`} target='_blank'> 
+    <Link to={`/movies/${id}`} > 
     <div className='favorite'>
         <img src={API_IMG+poster_path} className='card--image' data-testid="movie-poster"/>
         <img src='Heart.png ' className='heart' id="heart" onClick={click} />
