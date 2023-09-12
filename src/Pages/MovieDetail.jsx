@@ -1,7 +1,6 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import './MovieDetails.css'
-import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 

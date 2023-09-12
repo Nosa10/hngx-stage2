@@ -1,12 +1,7 @@
-import { useEffect, useState } from 'react'
+import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
-import './components/Card.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css'
-import { ReactDOM } from 'react';
 import HomePage from './Pages/HomePage';
 import MovieDetail from './Pages/MovieDetail';
 import PageNotFound from './PageNotFound';
