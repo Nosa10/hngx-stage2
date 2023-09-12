@@ -9,7 +9,6 @@ import './HomePage.css'
 
 function HomePage() {
   const API_IMG = 'https://image.tmdb.org/t/p/w500/'
-  const navigate = useNavigate()
   const [movies, setMovies] = useState([]);
   
   const API_URL = 'https://api.themoviedb.org/3/movie/550?api_key=e09fe431c8f2cc40c10dae1995e31e3b'
