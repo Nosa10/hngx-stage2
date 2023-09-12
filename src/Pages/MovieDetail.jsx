@@ -23,15 +23,9 @@ export default function MovieDetail() {
   }
   const API_IMG = 'https://image.tmdb.org/t/p/w500/'
 
-  var localDate = movieD.release_date
-  let timestamp = new Date(localDate).getTime();
-  //console.log(timestamp)
-  // const day = new Date(timestamp). toISOString();
-  // console.log(day)
-  let year = new Date(timestamp).getUTCFullYear();
-  let month = new Date(timestamp).getUTCMonth() + 1;
-  const date = new Date(timestamp).getUTCDate()
-  const ourFormat = `${date}/${month}/${year}`;
+  const localDate = movieD.release_date;
+  const utc = new Date(localDate)
+  console.log(utc.toUTCString())
   
   
     return(
@@ -42,7 +36,7 @@ export default function MovieDetail() {
             </div>
             <div className="someDetails">
                 <h4 data-testid="movie-title">{movieD.original_title}</h4>
-                <p>Release Date (UTC): <span data-testid="movie-release-date" id="utc">{ourFormat}</span></p>
+                <p>Release Date (UTC): <span data-testid="movie-release-date" id="utc">{utc.toUTCString()}</span></p>
                 <p>Runtime: <span data-testid="movie-runtime" >{movieD.runtime} minutes</span></p>
                 <p className="red">Genres: Action</p>
             </div>
