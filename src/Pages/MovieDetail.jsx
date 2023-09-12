@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 
-export default function MovieDetails() {
+export default function MovieDetail() {
     const [movies, setMovies] = useState([]);
     const { id } = useParams();
   const [movieD, setMovieD] = useState([]);

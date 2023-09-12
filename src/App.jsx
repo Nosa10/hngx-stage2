@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css'
 import { ReactDOM } from 'react';
 import HomePage from './Pages/HomePage';
-import MovieDetails from './Pages/Moviedetails';
+import MovieDetail from './Pages/MovieDetail';
 import PageNotFound from './PageNotFound';
 
 function App() {
@@ -21,7 +21,7 @@ const { id } = useParams()
         <Routes>
         <Route index  element={<HomePage />}/>
           <Route path="/home"  element={<HomePage />}/>
-          <Route path={`/movies/:id`}element={<MovieDetails />}/>
+          <Route path={`/movies/:id`}element={<MovieDetail />}/>
           <Route path="/404" element={<PageNotFound />} />
           	<Route path="*" element={<Navigate to="/404" />} />
         </Routes>
