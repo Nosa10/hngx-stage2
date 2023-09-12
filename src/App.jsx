@@ -7,8 +7,8 @@ import { useParams } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css'
 import { ReactDOM } from 'react';
-import HomePage from './Pages/homePage';
-import MovieDetails from './Pages/moviedetails';
+import HomePage from './Pages/HomePage';
+import MovieDetails from './Pages/Moviedetails';
 import PageNotFound from './PageNotFound';
 
 function App() {
