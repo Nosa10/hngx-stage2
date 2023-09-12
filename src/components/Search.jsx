@@ -9,9 +9,6 @@ import Col from 'react-bootstrap/Col';
 import './Search.css'
 
 function Search() {
-  
-  
-
   return (
     <div className='search'>
     <Container className='search'>

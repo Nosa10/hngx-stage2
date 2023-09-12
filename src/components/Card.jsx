@@ -10,30 +10,12 @@ import { Link } from 'react-router-dom';
 const API_IMG = 'https://image.tmdb.org/t/p/w500/'
 
 function Card({poster_path,title, release_date, id, vote_average}) {
-  const [isFavorite, setIsFavorite] = useState(true)
-  const click = isFavorite => {
-    setIsFavorite(prevState => !prevState)
-    return (
-      // if (isFavorite) {
-      //   document.getElementById('heart').backgroundColor = "red";
-      // } else{
-      //   document.getElementById('heart').backgroundColor = "white";
-      // };
-      isFavorite ? document.getElementById('heart').style.backgroundColor ='red' : 
-      document.getElementById('heart').style.backgroundColor ='white'
-    );
-        
-  }
-  
-  useEffect(() => {
-    document.getElementById('heart').style.backgroundColor = isFavorite
-  }, [isFavorite])
   return (
     <div className='card' data-testid="movie-card" key={id} >
     <Link to={`/movies/${id}`} > 
     <div className='favorite'>
         <img src={API_IMG+poster_path} className='card--image' data-testid="movie-poster"/>
-        <img src='Heart.png ' className='heart' id="heart" onClick={click} />
+        <img src='Heart.png ' className='heart' id="heart" />
           </div>
           
           <p>USA ,</p><span data-testid="movie-release-date">{release_date}</span> 
