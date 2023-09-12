@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './MovieDetails.css'
+import './Moviedetails.css'
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
