@@ -26,10 +26,14 @@ export default function MovieDetails() {
 
   var localDate = movieD.release_date
   let timestamp = new Date(localDate).getTime();
+  //console.log(timestamp)
+  // const day = new Date(timestamp). toISOString();
+  // console.log(day)
   let year = new Date(timestamp).getUTCFullYear();
   let month = new Date(timestamp).getUTCMonth() + 1;
   const date = new Date(timestamp).getUTCDate()
   const ourFormat = `${date}/${month}/${year}`;
+  
   
     return(
         <div className="black">
@@ -50,7 +54,6 @@ export default function MovieDetails() {
             <h4>Writers: <span className="red">Jim Cash, jack epps Jr, Peter Craig</span></h4>
             <h4>Stars: <span className="red">Tom Cruise</span></h4>
             
-            <Footer />
         </div>
     )
 }

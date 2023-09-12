@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 const API_IMG = 'https://image.tmdb.org/t/p/w500/'
 
-function Card({poster_path,title, release_date, id}) {
+function Card({poster_path,title, release_date, id, vote_average}) {
   const [isFavorite, setIsFavorite] = useState(true)
   const click = isFavorite => {
     setIsFavorite(prevState => !prevState)
@@ -40,7 +40,7 @@ function Card({poster_path,title, release_date, id}) {
           <h6 className='movie-title'data-testid= "movie-title">{title}</h6>
           <div className='rating'>
               <img src='imdb.png'/>
-              <span className='imdb'>86.0/100 </span>
+              <span className='imdb'>{vote_average}</span>
 
               <img src='tomato.png' />
               <span>97%</span>
