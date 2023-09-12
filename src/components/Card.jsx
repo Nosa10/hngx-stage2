@@ -29,15 +29,15 @@ function Card({poster_path,title, release_date, id, vote_average}) {
     document.getElementById('heart').style.backgroundColor = isFavorite
   }, [isFavorite])
   return (
-    <div className='card' data-testid= "movie-card" key={id} >
+    <div className='card' data-testid="movie-card" key={id} >
     <Link to={`/movies/${id}`} target='_blank'> 
     <div className='favorite'>
-        <img src={API_IMG+poster_path} className='card--image' data-testid= "movie-poster"/>
+        <img src={API_IMG+poster_path} className='card--image' data-testid="movie-poster"/>
         <img src='Heart.png ' className='heart' id="heart" onClick={click} />
           </div>
           
-          <p>USA ,</p><span data-testid= "movie-release-date">{release_date}</span> 
-          <h6 className='movie-title'data-testid= "movie-title">{title}</h6>
+          <p>USA ,</p><span data-testid="movie-release-date">{release_date}</span> 
+          <h6 className='movie-title'data-testid="movie-title">{title}</h6>
           <div className='rating'>
               <img src='imdb.png'/>
               <span className='imdb'>{vote_average}</span>
@@ -51,14 +51,5 @@ function Card({poster_path,title, release_date, id, vote_average}) {
          
   )
 }
-{/* <div className="card"> */}
-                    {/* {badgeText && <div className="card--badge">{badgeText}</div>}
-                    <img src={`../images/${props.poster}`} className="card--image" />
-                    <div className="card--stats">
-                        {/* <img src="../images/star.png" className="card--star" /> */}
-                        {/* <span className="gray">{props.releaseDate}</span>
-                    </div> */}
-                    {/* <p className="card--title">{props.title}</p> */}
-                // </div> */}
 
 export default Card

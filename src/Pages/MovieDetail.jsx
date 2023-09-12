@@ -31,13 +31,13 @@ export default function MovieDetail() {
     return(
         <div className="black">
             <div className="background">
-                <img src={API_IMG+movieD.poster_path} data-testid = "movie-poster"/>
+                <img src={API_IMG+movieD.poster_path} data-testid="movie-poster"/>
                 <a href="#" className="btn">Watch Trailer</a>
             </div>
             <div className="someDetails">
                 <h4 data-testid="movie-title">{movieD.original_title}</h4>
                 <p>Release Date (UTC): <span data-testid="movie-release-date" id="utc">{utc.toUTCString()}</span></p>
-                <p>Runtime: <span data-testid="movie-runtime" >{movieD.runtime} minutes</span></p>
+                <p>Runtime: <span data-testid="movie-runtime" >{movieD.runtime}</span> minutes</p>
                 <p className="red">Genres: Action</p>
             </div>
             <div  className="overview">
