@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css'
 import { ReactDOM } from 'react';
 import HomePage from './Pages/HomePage';
-import MovieDetails from './Pages/moviedetails';
+import MovieDetails from './Pages/Moviedetails';
 import PageNotFound from './PageNotFound';
 
 function App() {
